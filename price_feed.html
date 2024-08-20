@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Price Data</h1>
+    <div id="price-div"></div>
+  </div>
+
+  <div class="container">
+    <form  id="price-form">
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="title">Ticker: </label>
+          <input required id="ticker" value="AMZN" type="text" class="form-control"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="title">Number of Days: </label>
+          <input required id="numdays" value="3" type="text" class="form-control"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Get Prices" class="btn btn-primary"/>
+      </div>
+    </form>
+  </div>
+
+  <script src="price_feed.js" async defer></script>
+</body>
+</html>
